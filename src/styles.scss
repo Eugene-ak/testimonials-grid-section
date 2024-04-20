@@ -53,6 +53,7 @@ main {
   gap: 1.5rem;
 
   div {
+    width: 100%;
     display: grid;
     grid-template-columns: max-content auto;
     grid-template-rows: repeat(2, auto);
