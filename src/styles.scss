@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  padding: 2rem;
   background: $light-grayish-blue;
   min-height: 100vh;
   display: flex;
@@ -35,23 +36,60 @@ body {
 
 // Page styles
 main {
-  max-width: 900px;
+  max-width: 1100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 2rem;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5rem;
+
+  div {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 1rem;
+
+    img {
+      width: 30px;
+      border-radius: 50%;
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    p:last-of-type {
+      grid-area: 2 / 2;
+      opacity: 50%;
+    }
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+
+  article {
+    opacity: 70%;
+  }
 }
 
 .daniel {
   grid-area: 1 / 1 / 2 / 3;
-  background: $moderate-violet;
-  color: $white;
+  background: $moderate-violet url(/images/bg-pattern-quotation.svg) no-repeat
+    right 25% top;
+  color: $light-gray;
 }
 
 .jonathan {
   grid-area: 1 / 3 / 2 / 4;
   background: $very-dark-grayish-blue;
-  color: $white;
+  color: $light-gray;
 }
 
 .jeanette {
@@ -63,7 +101,7 @@ main {
 .patrick {
   grid-area: 2 / 2 / 3 / 4;
   background: $very-dark-blackish-blue;
-  color: $white ;
+  color: $light-gray;
 }
 
 .kira {
@@ -72,10 +110,22 @@ main {
   color: $very-dark-grayish-blue;
 }
 
-img {
-  border-radius: 50%;
-}
-
 footer {
   text-align: center;
+  color: $light-gray;
+  margin: 3rem auto 0;
+
+  a {
+    color: $moderate-violet;
+    text-decoration: none;
+  }
+}
+
+// Tablets and smaller devices
+@media screen and (max-width: 970px) {
+  main {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
 }

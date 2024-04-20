@@ -10,8 +10,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 ## Overview
@@ -24,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/images/screenshot.png)
 
 ### Links
 
@@ -43,15 +41,8 @@ Users should be able to:
 - [Vite](https://vitejs.dev/guide/) - React framework
 - [Sass](https://sass-lang.com/) - For styles
 
-### What I learned
-
-
-
-### Continued development
-
-
-
 ## Author
 
 - Website - [Eugene K. S. Amedior](https://portfolio-website-27ll.onrender.com/)
 - Frontend Mentor - [@Eugene-ak](https://www.frontendmentor.io/profile/Eugene-ak)
+- LinkedIn - [LinkedIn Profile](nkedin.com/in/eugene-amedior-aa19b420a/)

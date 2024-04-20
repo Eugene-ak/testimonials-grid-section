@@ -13,15 +13,17 @@ export default function Card({
   status,
   heading,
   review,
-  className
+  className,
 }: Testimonial) {
   return (
-    <div className={`card ${className}`}>
-      <img src={image} alt="avatar" />
-      <p>{name}</p>
-      <p>{status}</p>
+    <section className={`card ${className}`}>
+      <div>
+        <img src={image} alt="avatar" />
+        <p>{name}</p>
+        <p>{status}</p>
+      </div>
       <h1>{heading}</h1>
-      <p>{review}</p>
-    </div>
+      <article>{review}</article>
+    </section>
   );
 }
